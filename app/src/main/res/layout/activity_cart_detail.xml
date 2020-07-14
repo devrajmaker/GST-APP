@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cart_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gst"
+    tools:context="com.example.sonal.teacherdatabase.cart_detail">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="10"
+            >
+            <Button
+                android:id="@+id/btnEdit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="Edit"
+                android:onClick="onEdit"/>
+
+            <Button
+                android:id="@+id/btnDelete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onDelete"
+                android:text="Delete"
+                android:textSize="15sp" />
+
+        </LinearLayout >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="10"
+            >
+
+            <TextView
+                android:id="@+id/user"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:layout_weight="5"
+                android:background="#e6e6e6"
+                android:padding="10sp"
+                android:text="Username"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:background="#ffffff"
+                android:ems="10"
+                android:hint="edit_username"
+                android:padding="10sp"
+                android:textSize="15sp" />
+
+        </LinearLayout >
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="#000000"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="10"
+            >
+
+            <TextView
+                android:id="@+id/pid"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:layout_weight="5"
+                android:textSize="15sp"
+                android:padding="10sp"
+                android:background="#e6e6e6"
+                android:text="PID"
+                />
+
+            <TextView
+                android:id="@+id/pid1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:layout_weight="5"
+                android:textSize="15sp"
+                android:padding="10sp"
+                android:background="#ffffff"
+                android:hint="edit_pid" />
+
+        </LinearLayout >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="10"
+            >
+
+            <TextView
+                android:id="@+id/ptype"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:layout_weight="5"
+                android:textSize="15sp"
+                android:padding="10sp"
+                android:background="#e6e6e6"
+                android:text="P_type"
+                />
+
+            <TextView
+                android:id="@+id/ptype1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:layout_weight="5"
+                android:textSize="15sp"
+                android:padding="10sp"
+                android:background="#ffffff"
+                android:hint="edit_ptype" />
+
+        </LinearLayout >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="10"
+            >
+
+            <TextView
+                android:id="@+id/mrp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:layout_weight="5"
+                android:textSize="15sp"
+                android:padding="10sp"
+                android:background="#e6e6e6"
+                android:text="MRP"
+                />
+
+            <TextView
+                android:id="@+id/mrp1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:layout_weight="5"
+                android:textSize="15sp"
+                android:padding="10sp"
+                android:background="#ffffff"
+                android:hint="edit_mrp" />
+
+        </LinearLayout >
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="10"
+            >
+
+            <TextView
+                android:id="@+id/gst"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:layout_weight="5"
+                android:textSize="15sp"
+                android:padding="10sp"
+                android:background="#e6e6e6"
+                android:text="GST"
+                />
+
+            <TextView
+                android:id="@+id/gst1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:layout_weight="5"
+                android:textSize="15sp"
+                android:padding="10sp"
+                android:background="#ffffff"
+                android:hint="edit_gst" />
+
+        </LinearLayout >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="10"
+            >
+
+            <TextView
+                android:id="@+id/qty"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:layout_weight="5"
+                android:textSize="15sp"
+                android:padding="10sp"
+                android:background="#e6e6e6"
+                android:text="Quantity"
+                />
+
+            <TextView
+                android:id="@+id/qty1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:layout_weight="5"
+                android:textSize="15sp"
+                android:padding="10sp"
+                android:background="#ffffff"
+                android:hint="edit_qty" />
+
+        </LinearLayout >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="10"
+            >
+
+            <TextView
+                android:id="@+id/totalmrp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:layout_weight="5"
+                android:textSize="15sp"
+                android:padding="10sp"
+                android:background="#e6e6e6"
+                android:text="Total"
+                />
+
+            <TextView
+                android:id="@+id/totalmrp1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:layout_weight="5"
+                android:textSize="15sp"
+                android:padding="10sp"
+                android:background="#ffffff"
+                android:hint="edit_totalmrp" />
+
+        </LinearLayout >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="10"
+            >
+
+            <TextView
+                android:id="@+id/totalgst"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:layout_weight="5"
+                android:textSize="15sp"
+                android:padding="10sp"
+                android:background="#e6e6e6"
+                android:text="TotalGST"
+                />
+
+            <TextView
+                android:id="@+id/totalgst1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:layout_weight="5"
+                android:textSize="15sp"
+                android:padding="10sp"
+                android:background="#ffffff"
+                android:hint="edit_totalgst" />
+
+        </LinearLayout >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="10"
+            >
+
+            <TextView
+                android:id="@+id/totalprice"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:layout_weight="5"
+                android:textSize="15sp"
+                android:padding="10sp"
+                android:background="#e6e6e6"
+                android:text="Totalprice"
+                />
+
+            <TextView
+                android:id="@+id/totalprice1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:layout_weight="5"
+                android:textSize="15sp"
+                android:padding="10sp"
+                android:background="#ffffff"
+                android:hint="edit_totalprice" />
+
+        </LinearLayout >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="10"
+            >
+
+            <TextView
+                android:id="@+id/paid"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:layout_weight="5"
+                android:textSize="15sp"
+                android:padding="10sp"
+                android:background="#e6e6e6"
+                android:text="PAID"
+                />
+
+            <TextView
+                android:id="@+id/paid1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:layout_weight="5"
+                android:textSize="15sp"
+                android:padding="10sp"
+                android:background="#ffffff"
+                android:hint="edit_paid" />
+
+        </LinearLayout >
+
+
+
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="#000000"
+            />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

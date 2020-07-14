@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/pdetail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gst"
+
+    tools:context="com.example.sonal.teacherdatabase.pdetail">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="10"
+            >
+            <Button
+                android:id="@+id/btnEdit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="Edit"
+                android:onClick="onEdit"/>
+            <Button
+                android:id="@+id/btnDelete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="Delete"
+                android:onClick="Delete"
+                />
+
+        </LinearLayout >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="10"
+            >
+
+            <TextView
+                android:id="@+id/pid1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:layout_weight="5"
+                android:background="#e6e6e6"
+                android:padding="10sp"
+                android:text="PID"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/pid"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:background="#ffffff"
+                android:ems="10"
+                android:hint="edit_pid"
+                android:padding="10sp"
+                android:textSize="15sp" />
+
+        </LinearLayout >
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="#000000"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="10"
+            >
+
+            <TextView
+                android:id="@+id/pname1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:layout_weight="5"
+                android:textSize="15sp"
+                android:padding="10sp"
+                android:background="#e6e6e6"
+                android:text="Pname"
+                />
+
+            <TextView
+                android:id="@+id/pname"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:layout_weight="5"
+                android:textSize="15sp"
+                android:padding="10sp"
+                android:background="#ffffff"
+                android:hint="edit_pname" />
+
+        </LinearLayout >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="10"
+            >
+
+            <TextView
+                android:id="@+id/mrp1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:layout_weight="5"
+                android:textSize="15sp"
+                android:padding="10sp"
+                android:background="#e6e6e6"
+                android:text="mrp"
+                />
+
+            <TextView
+                android:id="@+id/mrp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:layout_weight="5"
+                android:textSize="15sp"
+                android:padding="10sp"
+                android:background="#ffffff"
+                android:hint="edit_mrp" />
+
+        </LinearLayout >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="10"
+            >
+
+            <TextView
+                android:id="@+id/gst1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:layout_weight="5"
+                android:textSize="15sp"
+                android:padding="10sp"
+                android:background="#e6e6e6"
+                android:text="GST"
+                />
+
+            <TextView
+                android:id="@+id/gst"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:layout_weight="5"
+                android:textSize="15sp"
+                android:padding="10sp"
+                android:background="#ffffff"
+                android:hint="edit_gst" />
+
+        </LinearLayout >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="10"
+            >
+
+            <TextView
+                android:id="@+id/ptype1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:layout_weight="5"
+                android:textSize="15sp"
+                android:padding="10sp"
+                android:background="#e6e6e6"
+                android:text="P_type"
+                />
+
+            <TextView
+                android:id="@+id/ptype"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:layout_weight="5"
+                android:textSize="15sp"
+                android:padding="10sp"
+                android:background="#ffffff"
+                android:hint="edit_ptype" />
+
+        </LinearLayout >
+
+
+
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="#000000"
+            />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

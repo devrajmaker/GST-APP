@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/user_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gst"
+
+    tools:context="com.example.sonal.teacherdatabase.User_Detail">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="10"
+            >
+            <Button
+                android:id="@+id/btnEdit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="Edit"
+                android:onClick="onEdit"/>
+            <Button
+                android:id="@+id/btnDelete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="Delete"
+                android:onClick="onDelete"
+                />
+
+        </LinearLayout >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="10"
+            >
+
+            <TextView
+                android:id="@+id/user"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:layout_weight="5"
+                android:background="#e6e6e6"
+                android:padding="10sp"
+                android:text="Username"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:background="#ffffff"
+                android:ems="10"
+                android:hint="edit_username"
+                android:padding="10sp"
+                android:textSize="15sp" />
+
+        </LinearLayout >
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="#000000"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="10"
+            >
+
+            <TextView
+                android:id="@+id/pass"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:layout_weight="5"
+                android:textSize="15sp"
+                android:padding="10sp"
+                android:background="#e6e6e6"
+                android:text="Password"
+                />
+
+            <TextView
+                android:id="@+id/password"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:layout_weight="5"
+                android:textSize="15sp"
+                android:padding="10sp"
+                android:background="#ffffff"
+                android:hint="edit_password" />
+
+        </LinearLayout >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="10"
+            >
+
+            <TextView
+                android:id="@+id/phone"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:layout_weight="5"
+                android:textSize="15sp"
+                android:padding="10sp"
+                android:background="#e6e6e6"
+                android:text="PhoneNumber"
+                />
+
+            <TextView
+                android:id="@+id/phoneno"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:layout_weight="5"
+                android:textSize="15sp"
+                android:padding="10sp"
+                android:background="#ffffff"
+                android:hint="edit_phoneno" />
+
+        </LinearLayout >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="10"
+                >
+
+                <TextView
+                    android:id="@+id/emaill"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:layout_weight="5"
+                    android:textSize="15sp"
+                    android:padding="10sp"
+                    android:background="#e6e6e6"
+                    android:text="Email"
+                    />
+
+                <TextView
+                    android:id="@+id/email"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:layout_weight="5"
+                    android:textSize="15sp"
+                    android:padding="10sp"
+                    android:background="#ffffff"
+                    android:hint="edit_email" />
+
+            </LinearLayout >
+
+
+
+
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="#000000"
+            />
+
+
+    </LinearLayout>
+
+</RelativeLayout>
